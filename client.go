@@ -1,4 +1,4 @@
-package mongodb
+package mongo_connection
 
 import (
 	"context"
