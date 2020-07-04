@@ -10,11 +10,11 @@ import (
 
 type (
 	MongoConfigs struct {
-		Hosts    []string      `config:"hosts,required"`
-		Ports    []string      `config:"ports,required"`
-		User     string        `config:"user,required"`
-		Password string        `config:"password,required"`
-		Timeout  time.Duration `config:"timeout,default=1s"`
+		Hosts    []string      `config:"hosts;required"`
+		Ports    []string      `config:"ports;required"`
+		User     string        `config:"user;required"`
+		Password string        `config:"password;required"`
+		Timeout  time.Duration `config:"timeout;default=1s"`
 	}
 
 	MismatchHostsAndPortsError struct {
